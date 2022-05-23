@@ -8,8 +8,8 @@ import {
 const form = document.querySelector('.bunny-form');
 const logoutButton = document.getElementById('logout');
 
-form.addEventListener('submit', async e => {
-    // prevent default
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
     // get the name and family id from the form
 
