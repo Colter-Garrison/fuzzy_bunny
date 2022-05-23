@@ -27,6 +27,7 @@ async function displayFamilies() {
             div3.textContent = bunny.name;
             div3.addEventListener('click', async () => {
                 await deleteBunny(bunny.id);
+                displayFamilies();
             });
             div2.append(div3);
         }
